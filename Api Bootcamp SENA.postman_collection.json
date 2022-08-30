@@ -1,36 +1,23 @@
 {
 	"info": {
-		"_postman_id": "ab1a0d8c-31e4-48fe-8bd6-63be35d5f89b",
-		"name": "Api Bootcamp SENA",
+		"_postman_id": "3771a008-cffa-4e6e-a9eb-2f9e17dd756f",
+		"name": "Api bootcamp sena",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Traer todos los Bootcamps",
+			"name": "Traerbootcamps",
 			"request": {
 				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Traer bootcamp po id",
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Crear bootcamp",
-			"request": {
-				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/bootcamps",
+					"raw": "http://127.0.0.1:8000/api/bootcamps",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"127",
+						"0",
+						"0",
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -42,15 +29,18 @@
 			"response": []
 		},
 		{
-			"name": "actualizar bootcamp",
+			"name": "seleccionar bootcamp por id",
 			"request": {
-				"method": "PUT",
+				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/bootcamps/9",
+					"raw": "http://127.0.0.1:8000/api/bootcamps/9",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"127",
+						"0",
+						"0",
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -63,10 +53,73 @@
 			"response": []
 		},
 		{
-			"name": "eliminar bootcamp",
+			"name": "crear bootcamp",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/bootcamps",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bootcamps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar un bootcamp por id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/bootcamps/9",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bootcamps",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar bootcamp por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/bootcamps/9",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bootcamps",
+						"9"
+					]
+				}
 			},
 			"response": []
 		}
